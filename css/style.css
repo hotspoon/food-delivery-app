@@ -26,13 +26,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 html {
-  font-size: 100%;
+  font-size: 16px;
   overflow-x: hidden !important;
-}
-@media only screen and (max-width: 37.5em) {
-  html {
-    overflow-x: hidden !important;
-  }
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -53,7 +48,6 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden !important;
-  position: relative;
 }
 @media only screen and (max-width: 56.25em) {
   body {
@@ -142,7 +136,7 @@ body {
   border-radius: 5px;
 }
 .btn--appstore:hover {
-  color: #252b42;
+  color: #ffffff;
 }
 .btn--footer-appstore {
   color: #ffffff;
@@ -303,6 +297,10 @@ body {
 }
 .navigation__link:hover, .navigation__link:active {
   color: #fa4a0c;
+}
+
+.navbar {
+  font-size: 2rem;
 }
 
 .section1__item {

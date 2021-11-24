@@ -1,9 +1,5 @@
 "use strict";
-// function myFunction() {
-//   var x = document.getElementById("navigation");
-//   if (x.className === "navigation") {
-//     x.className += " navigation__responsive";
-//   } else {
-//     x.className = "navigation";
-//   }
-// }
+var viewportWidth = document.documentElement.clientWidth;
+var viewportHeight = document.documentElement.clientHeight;
+
+console.log(viewportHeight, viewportWidth);
