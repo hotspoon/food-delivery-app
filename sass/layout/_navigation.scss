@@ -57,5 +57,7 @@
 }
 
 .navbar {
-  font-size: 2rem;
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }

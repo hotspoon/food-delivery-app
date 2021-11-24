@@ -299,8 +299,10 @@ body {
   color: #fa4a0c;
 }
 
-.navbar {
-  font-size: 2rem;
+@media only screen and (max-width: 37.5em) {
+  .navbar {
+    font-size: 2rem;
+  }
 }
 
 .section1__item {
