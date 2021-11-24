@@ -27,6 +27,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 100%;
+  overflow-x: hidden !important;
 }
 @media only screen and (max-width: 37.5em) {
   html {
@@ -51,6 +52,8 @@ html {
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden !important;
+  position: relative;
 }
 @media only screen and (max-width: 56.25em) {
   body {

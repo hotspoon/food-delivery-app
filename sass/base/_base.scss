@@ -25,6 +25,7 @@ html {
   @include respond(big-desktop) {
     font-size: 75%; //1rem = 12, 12/16
   }
+  overflow-x: hidden !important;
 }
 
 body {
@@ -33,6 +34,8 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+  overflow-x: hidden !important;
+  position: relative;
 }
 
 ::selection {
