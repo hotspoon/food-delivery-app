@@ -1,0 +1,57 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+
+  &__img {
+    width: 180px;
+    height: auto;
+
+    @include respond(phone) {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__responsive {
+    @include respond(phone) {
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      font-size: 3rem;
+      color: $color-primary;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: bold;
+      color: $color-black;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+}

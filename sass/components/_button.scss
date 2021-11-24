@@ -1,0 +1,62 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 4rem;
+    transition: all 0.2s;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    filter: brightness(80%);
+    color: $color-white;
+  }
+
+  &--playstore {
+    background-color: $color-primary;
+    color: $color-white;
+    @include respond(phone) {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      border: 2px solid $color-primary;
+    }
+  }
+
+  &--appstore {
+    background-color: transparent;
+    color: $color-white;
+    border: 2px solid $color-white;
+    @include respond(phone) {
+      border: 2px solid $color-primary;
+      color: $color-primary;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+  }
+
+  &--footer-playstore {
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+
+  &--appstore:hover {
+    color: $color-black;
+  }
+
+  &--footer-appstore {
+    color: $color-white;
+    border: 2px solid $color-white;
+    border-radius: 5px;
+  }
+
+  &--footer-appstore:hover {
+    color: $color-primary;
+  }
+}

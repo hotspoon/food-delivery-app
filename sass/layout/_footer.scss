@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 5rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  &__logo {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 180px;
+    height: auto;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: bold;
+      color: $color-black;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+}
