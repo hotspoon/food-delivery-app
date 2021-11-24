@@ -292,11 +292,11 @@ body {
 }
 .navigation__link:link, .navigation__link:visited {
   font-weight: bold;
-  color: #252b42;
+  color: #252b42 !important;
   text-decoration: none;
 }
 .navigation__link:hover, .navigation__link:active {
-  color: #fa4a0c;
+  color: #fa4a0c !important;
 }
 
 @media only screen and (max-width: 37.5em) {
